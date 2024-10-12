@@ -1,0 +1,305 @@
+﻿@using PagedList.Mvc;
+@model PagedList.IPagedList<Futebol.Agente>
+
+<link href="~/Content/PagedList.css" rel="stylesheet" />
+
+@{
+    ViewBag.Title = "ListaAgente";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #FFFFFF;
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+    #teste {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+
+        #teste a:hover {
+            color: #f4511e;
+            text-decoration: none;
+        }
+
+    #customers {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+        #customers td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #f4511e;
+            color: white;
+        }
+
+    /*Ordenação*/
+
+    #cabecalhotabela {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+
+        #cabecalhotabela a {
+            color: white;
+            text-decoration: none;
+        }
+
+            #cabecalhotabela a:hover {
+                color: black;
+                text-decoration: none;
+            }
+
+    /*Pesquisa*/
+
+    input[type=submit] {
+        background-color: #000000;
+        color: white;
+        padding: 7px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: left;
+    }
+
+        input[type=submit]:hover {
+            background-color: #f4511e;
+            color: white;
+        }
+
+    #search1 {
+        width: 1523px;
+        height: 380px;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    #search2 {
+        width: 1523px;
+        height: 330px;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    #search3 {
+        width: 1523px;
+        height: 360px;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    #alerta {
+        width: 1511px;
+        height: 60px;
+        position: fixed;
+        bottom: 0px;
+        right: 170px;
+    }
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .alert {
+        padding: 20px;
+        background-color: #f44336;
+        color: white;
+        opacity: 1;
+        transition: opacity 0.6s;
+        margin-bottom: 200px;
+    }
+
+        .alert.success {
+            background-color: #4CAF50;
+        }
+
+        .alert.info {
+            background-color: #2196F3;
+        }
+
+        .alert.warning {
+            background-color: #ff9800;
+        }
+</style>
+
+<h2 id="teste">Agentes Desportivos</h2>
+
+<p id="teste">
+    @Html.ActionLink("Adicionar Agente", "AdicionarAgente")
+</p>
+<table id="customers">
+    <tr id="cabecalhotabela">
+        <th>
+            @Html.ActionLink("ID do Agente", "ListaAgente", new { ordenar = ViewBag.ordenarID, filtro = ViewBag.filtro })
+        </th>
+        <th>
+            @Html.ActionLink("Nome", "ListaAgente", new { ordenar = ViewBag.ordenarNome, filtro = ViewBag.filtro })
+        </th>
+        <th>
+            Morada
+        </th>
+        <th>
+            Código Postal
+        </th>
+        <th>
+            Telefone
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IDAgente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Morada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodigoPostal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefone)
+            </td>
+            <td id="teste">
+                @Html.ActionLink("Editar", "Edit", new { id = item.IDAgente }) |
+                @Html.ActionLink("Consultar", "Consultar", new { id = item.IDAgente }) |
+                @Html.ActionLink("Eliminar", "Delete", null, new { id = item.IDAgente, name = "btnApagar" })
+            </td>
+        </tr>
+    }
+
+</table>
+
+@Html.PagedListPager(Model, page => Url.Action("ListaAgente", new { page, ordenar = ViewBag.ordenar, filtro = ViewBag.filtro }))
+
+
+<br />
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+@using (Html.BeginForm("ListaAgente", "Agente", FormMethod.Get))
+{
+
+    <br />
+    <div class="navbar-form" id="search1">
+
+        <font face="Trebuchet MS"><b>Pesquisa</b></font>
+
+        <div class="navbar-form" id="search3">
+            @Html.TextBox("search", "", new { @class = "form-control" })
+        </div>
+
+        <div class="col-md-offset-2 col-md-10" id="search2">
+
+            <input type="submit" value="Procurar" class="btn btn-default" />
+        </div>
+    </div>
+
+}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+@if (ViewBag.msg == "Registo criado com sucesso" || ViewBag.msg == "Registo eliminado com sucesso" || ViewBag.msg == "Registo editado com sucesso")
+{
+    <div class="alert success" id="alerta">
+        <strong id="teste">Sucesso!</strong> @ViewBag.msg
+    </div>
+}
+else if (ViewBag.msg == "Treinador Inexistente" || ViewBag.msg == "Ocorreu um Erro. Operação cancelada" || ViewBag.msg == "O registo não foi encontrado")
+{
+
+    <div class="alert" id="alerta">
+        <strong id="teste">Erro!</strong> @ViewBag.msg
+    </div>
+
+}
+
+@section ApagarAgentes{
+
+    <script type="text/javascript">
+
+        $(function () {
+
+            $("[name='btnApagar']").click(function (evt) {
+
+                evt = evt ? evt : window.event;
+                evt.preventDefault();
+
+                if (confirm("Tem a certeza que pretende apagar este registo?") == false) {
+
+                    return false;
+                }
+
+                //ajax
+                $.ajax({
+
+                    url:'@Url.Action("Delete")',
+                    data: { id: evt.target.id },
+                    type: "POST",
+                    success: function (data) {
+
+                        console.log(JSON.stringify(data));
+                        $("#visor").text(data.msg);
+
+                        //Remover a linha
+                        $(evt.target).closest("tr").remove();
+
+                    },
+                    error: function () {
+
+                        alert("Erro");
+                    }
+
+                });
+            });
+
+        });
+
+    </script>
+}

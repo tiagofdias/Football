@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <style>
+        ul {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000000;
+        }
+
+        li {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            float: left;
+        }
+
+            li a {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                    background-color: #f4511e;
+                    color: White;
+                    text-decoration: none;
+                }
+
+        .active {
+         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+         color: inherit;
+         background-color: #f4511e;
+         color: White;
+         text-decoration: none;
+        }
+
+        ul {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+             position: fixed;
+             top: 0;
+            width: 100%;
+            }
+
+    </style>
+
+</head>
+<body>
+
+    <ul>
+        <li style="float:right"><a class="active" @Html.ActionLink("Inicio", "Index", "Home")</a></li>
+        <li>@Html.ActionLink("Estádios", "ListaEstadios", "Home")</li>
+        <li>@Html.ActionLink("Clubes", "ListaClubes", "Clubes")</li>
+        <li>@Html.ActionLink("Agentes", "ListaAgente", "Agente")</li>
+        <li>@Html.ActionLink("Jogadores", "ListaJogadores", "Jogadores")</li>
+        <li>@Html.ActionLink("Treinadores", "ListaTreinadores", "Treinadores")</li>
+
+    </ul>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    @RenderSection("ApagarEstadios", required: false)
+    @RenderSection("ApagarClubes", required: false)
+    @RenderSection("ApagarAgentes", required: false)
+    @RenderSection("ApagarJogadores", required: false)
+    @RenderSection("ApagarTreinador", required: false)
+
+</body>
+</html>

@@ -1,0 +1,326 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\James\\Desktop\\Futebol\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|c:\\users\\james\\desktop\\futebol\\futebol\\views\\agente\\adicionaragente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\views\\agente\\adicionaragente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|c:\\users\\james\\desktop\\futebol\\futebol\\controllers\\agentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\controllers\\agentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|C:\\Users\\James\\Desktop\\Futebol\\futebol\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|C:\\Users\\James\\Desktop\\Futebol\\futebol\\models\\utilitarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\models\\utilitarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|c:\\users\\james\\desktop\\futebol\\futebol\\views\\jogadores\\consultar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\views\\jogadores\\consultar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|C:\\Users\\James\\Desktop\\Futebol\\futebol\\views\\jogadores\\listajogadores.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\views\\jogadores\\listajogadores.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|C:\\Users\\James\\Desktop\\Futebol\\futebol\\controllers\\jogadorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\controllers\\jogadorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|C:\\Users\\James\\Desktop\\Futebol\\futebol\\views\\jogadores\\adicionarjogadores.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\views\\jogadores\\adicionarjogadores.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|C:\\Users\\James\\Desktop\\Futebol\\futebol\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|C:\\Users\\James\\Desktop\\Futebol\\futebol\\clube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\clube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|C:\\Users\\James\\Desktop\\Futebol\\futebol\\jogadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\jogadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|C:\\Users\\James\\Desktop\\Futebol\\futebol\\futebol.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\futebol.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|C:\\Users\\James\\Desktop\\Futebol\\futebol\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|C:\\Users\\James\\Desktop\\Futebol\\futebol\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|C:\\Users\\James\\Desktop\\Futebol\\futebol\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|C:\\Users\\James\\Desktop\\Futebol\\futebol\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|C:\\Users\\James\\Desktop\\Futebol\\futebol\\controllers\\treinadorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\controllers\\treinadorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|C:\\Users\\James\\Desktop\\Futebol\\futebol\\agente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46AF38DC-83BB-41A5-A16E-1E53F49F92D8}|Futebol\\Futebol.csproj|solutionrelative:futebol\\agente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdicionarAgente.cshtml",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Views\\Agente\\AdicionarAgente.cshtml",
+              "RelativeDocumentMoniker": "Futebol\\Views\\Agente\\AdicionarAgente.cshtml",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Views\\Agente\\AdicionarAgente.cshtml",
+              "RelativeToolTip": "Futebol\\Views\\Agente\\AdicionarAgente.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T11:35:36.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AgenteController.cs",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Controllers\\AgenteController.cs",
+              "RelativeDocumentMoniker": "Futebol\\Controllers\\AgenteController.cs",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Controllers\\AgenteController.cs",
+              "RelativeToolTip": "Futebol\\Controllers\\AgenteController.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAuwA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T11:29:33.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Consultar.cshtml",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Views\\Jogadores\\Consultar.cshtml",
+              "RelativeDocumentMoniker": "Futebol\\Views\\Jogadores\\Consultar.cshtml",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Views\\Jogadores\\Consultar.cshtml",
+              "RelativeToolTip": "Futebol\\Views\\Jogadores\\Consultar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T11:27:11.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Utilitarios.cs",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Models\\Utilitarios.cs",
+              "RelativeDocumentMoniker": "Futebol\\Models\\Utilitarios.cs",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Models\\Utilitarios.cs",
+              "RelativeToolTip": "Futebol\\Models\\Utilitarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T11:27:12.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdicionarJogadores.cshtml",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Views\\Jogadores\\AdicionarJogadores.cshtml",
+              "RelativeDocumentMoniker": "Futebol\\Views\\Jogadores\\AdicionarJogadores.cshtml",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Views\\Jogadores\\AdicionarJogadores.cshtml",
+              "RelativeToolTip": "Futebol\\Views\\Jogadores\\AdicionarJogadores.cshtml",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAJ8AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T11:27:12.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Jogadores.cs",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Jogadores.cs",
+              "RelativeDocumentMoniker": "Futebol\\Jogadores.cs",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Jogadores.cs",
+              "RelativeToolTip": "Futebol\\Jogadores.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T11:27:12.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "futebol.Context.tt",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\futebol.Context.tt",
+              "RelativeDocumentMoniker": "Futebol\\futebol.Context.tt",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\futebol.Context.tt",
+              "RelativeToolTip": "Futebol\\futebol.Context.tt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-12T11:27:12.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JogadoresController.cs",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Controllers\\JogadoresController.cs",
+              "RelativeDocumentMoniker": "Futebol\\Controllers\\JogadoresController.cs",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Controllers\\JogadoresController.cs",
+              "RelativeToolTip": "Futebol\\Controllers\\JogadoresController.cs",
+              "ViewState": "AgIAAPgAAAAAAAAAAAAuwBIBAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T11:27:12.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Web.config",
+              "RelativeDocumentMoniker": "Futebol\\Web.config",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Web.config",
+              "RelativeToolTip": "Futebol\\Web.config",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAD4AAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-10-12T11:27:12.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Global.asax.cs",
+              "RelativeDocumentMoniker": "Futebol\\Global.asax.cs",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Global.asax.cs",
+              "RelativeToolTip": "Futebol\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T11:27:12.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\packages.config",
+              "RelativeDocumentMoniker": "Futebol\\packages.config",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\packages.config",
+              "RelativeToolTip": "Futebol\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-10-12T11:27:12.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Clube.cs",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Clube.cs",
+              "RelativeDocumentMoniker": "Futebol\\Clube.cs",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Clube.cs",
+              "RelativeToolTip": "Futebol\\Clube.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T11:27:12.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ListaJogadores.cshtml",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Views\\Jogadores\\ListaJogadores.cshtml",
+              "RelativeDocumentMoniker": "Futebol\\Views\\Jogadores\\ListaJogadores.cshtml",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Views\\Jogadores\\ListaJogadores.cshtml",
+              "RelativeToolTip": "Futebol\\Views\\Jogadores\\ListaJogadores.cshtml",
+              "ViewState": "AgIAAPMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-12T11:27:12.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "Futebol\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "Futebol\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T11:27:12.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FilterConfig.cs",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\App_Start\\FilterConfig.cs",
+              "RelativeDocumentMoniker": "Futebol\\App_Start\\FilterConfig.cs",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\App_Start\\FilterConfig.cs",
+              "RelativeToolTip": "Futebol\\App_Start\\FilterConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T11:27:12.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "Futebol\\App_Start\\BundleConfig.cs",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "Futebol\\App_Start\\BundleConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T11:27:12.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TreinadoresController.cs",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Controllers\\TreinadoresController.cs",
+              "RelativeDocumentMoniker": "Futebol\\Controllers\\TreinadoresController.cs",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Controllers\\TreinadoresController.cs",
+              "RelativeToolTip": "Futebol\\Controllers\\TreinadoresController.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAApwIsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T11:27:12.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Agente.cs",
+              "DocumentMoniker": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Agente.cs",
+              "RelativeDocumentMoniker": "Futebol\\Agente.cs",
+              "ToolTip": "C:\\Users\\James\\Desktop\\Futebol\\Futebol\\Agente.cs",
+              "RelativeToolTip": "Futebol\\Agente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T11:27:12.065Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

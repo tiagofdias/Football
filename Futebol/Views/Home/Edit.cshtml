@@ -1,0 +1,156 @@
+﻿@model Futebol.Estadio
+
+@{
+    ViewBag.Title = "Editar Estádio";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 id="teste">Editar Estádio</h2>
+
+<style>
+
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+
+    #teste {
+        color: black;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+
+        #teste a:hover {
+            color: #f4511e;
+            text-decoration: none;
+        }
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #000000;
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    label {
+        color: black;
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+        text-align: left
+    }
+
+    input[type=submit] {
+        background-color: #000000;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+        input[type=submit]:hover {
+            background-color: #f4511e;
+             color:white;
+        }
+</style>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-control-static" id="teste">
+        <hr />
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group" style="display: none;">
+            @Html.LabelFor(model => model.IDEstadio, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.IDEstadio, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                @Html.ValidationMessageFor(model => model.IDEstadio, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Nome *</b>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Localização</b>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Localizacao, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Localizacao, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Capacidade</b>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Capacidade, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Capacidade, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Arquiteto</b>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Arquiteto, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Arquiteto, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Inauguração</b>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Inauguracao, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+                @Html.ValidationMessageFor(model => model.Inauguracao, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Custo da Construção</b>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CustoConstrucao, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CustoConstrucao, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div id="teste">
+    @Html.ActionLink("Voltar para a Lista", "ListaEstadios")
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

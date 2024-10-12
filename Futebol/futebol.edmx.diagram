@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c3fdd3e153464891b2db3ca6e9dd9351" Name="Diagram1">
+        <EntityTypeShape EntityType="futebolModel.Agente" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="futebolModel.Clube" Width="1.5" PointX="8.375" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="futebolModel.Estadio" Width="1.5" PointX="11.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="futebolModel.Jogadores" Width="1.5" PointX="3.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="futebolModel.Posicao" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="futebolModel.Treinador" Width="1.5" PointX="6" PointY="3.25" IsExpanded="true" />
+        <AssociationConnector Association="futebolModel.FK_IDAgente" ManuallyRouted="false" />
+        <AssociationConnector Association="futebolModel.FK_IDAgentes" ManuallyRouted="false" />
+        <AssociationConnector Association="futebolModel.FK_IDClube" ManuallyRouted="false" />
+        <AssociationConnector Association="futebolModel.FK_IDClubes" ManuallyRouted="false" />
+        <AssociationConnector Association="futebolModel.FK_IDEstadio" ManuallyRouted="false" />
+        <AssociationConnector Association="futebolModel.FK_IDPosicao" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

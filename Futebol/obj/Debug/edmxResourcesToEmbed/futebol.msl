@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="futebolModelStoreContainer" CdmEntityContainer="futebolEntities">
+    <EntitySetMapping Name="Agente">
+      <EntityTypeMapping TypeName="futebolModel.Agente">
+        <MappingFragment StoreEntitySet="Agente">
+          <ScalarProperty Name="IDAgente" ColumnName="IDAgente" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Morada" ColumnName="Morada" />
+          <ScalarProperty Name="CodigoPostal" ColumnName="CodigoPostal" />
+          <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clube">
+      <EntityTypeMapping TypeName="futebolModel.Clube">
+        <MappingFragment StoreEntitySet="Clube">
+          <ScalarProperty Name="IDClube" ColumnName="IDClube" />
+          <ScalarProperty Name="IDEstadio" ColumnName="IDEstadio" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Presidente" ColumnName="Presidente" />
+          <ScalarProperty Name="Morada" ColumnName="Morada" />
+          <ScalarProperty Name="CodigoPostal" ColumnName="CodigoPostal" />
+          <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estadio">
+      <EntityTypeMapping TypeName="futebolModel.Estadio">
+        <MappingFragment StoreEntitySet="Estadio">
+          <ScalarProperty Name="IDEstadio" ColumnName="IDEstadio" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Localizacao" ColumnName="Localizacao" />
+          <ScalarProperty Name="Capacidade" ColumnName="Capacidade" />
+          <ScalarProperty Name="Arquiteto" ColumnName="Arquiteto" />
+          <ScalarProperty Name="Inauguracao" ColumnName="Inauguracao" />
+          <ScalarProperty Name="CustoConstrucao" ColumnName="CustoConstrucao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jogadores">
+      <EntityTypeMapping TypeName="futebolModel.Jogadores">
+        <MappingFragment StoreEntitySet="Jogadores">
+          <ScalarProperty Name="IDJogador" ColumnName="IDJogador" />
+          <ScalarProperty Name="IDClube" ColumnName="IDClube" />
+          <ScalarProperty Name="IDAgente" ColumnName="IDAgente" />
+          <ScalarProperty Name="IDPosicao" ColumnName="IDPosicao" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Altura" ColumnName="Altura" />
+          <ScalarProperty Name="Peso" ColumnName="Peso" />
+          <ScalarProperty Name="DataNascimento" ColumnName="DataNascimento" />
+          <ScalarProperty Name="Idade" ColumnName="Idade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Posicao">
+      <EntityTypeMapping TypeName="futebolModel.Posicao">
+        <MappingFragment StoreEntitySet="Posicao">
+          <ScalarProperty Name="IDPosicao" ColumnName="IDPosicao" />
+          <ScalarProperty Name="Posicao1" ColumnName="Posicao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Treinador">
+      <EntityTypeMapping TypeName="futebolModel.Treinador">
+        <MappingFragment StoreEntitySet="Treinador">
+          <ScalarProperty Name="IDTreinador" ColumnName="IDTreinador" />
+          <ScalarProperty Name="IDAgente" ColumnName="IDAgente" />
+          <ScalarProperty Name="IDClube" ColumnName="IDClube" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="Idade" ColumnName="Idade" />
+          <ScalarProperty Name="Nacionalidade" ColumnName="Nacionalidade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

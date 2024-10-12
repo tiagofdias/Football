@@ -1,0 +1,173 @@
+﻿@model Futebol.Jogadores
+
+@{
+    ViewBag.Title = "Editar Jogador";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Editar Jogador</h2>
+
+<style>
+
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+
+    #teste {
+        color: black;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+
+        #teste a:hover {
+            color: #f4511e;
+            text-decoration: none;
+        }
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #000000;
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    label {
+        color: black;
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+        text-align: left
+    }
+
+    input[type=submit] {
+        background-color: #000000;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+        input[type=submit]:hover {
+            background-color: #f4511e;
+            color:white;
+        }
+</style>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-control-static" id="teste">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="navbar-form" style="display: none;">
+            @Html.LabelFor(model => model.IDJogador, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.IDJogador, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                @Html.ValidationMessageFor(model => model.IDJogador, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Clube *</b>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.IDClube, ViewBag.Clube as SelectList, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.IDClube, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Agente Desportivo *</b>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.IDAgente, ViewBag.Agente as SelectList, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.IDAgente, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Posição *</b>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.IDPosicao, ViewBag.Posicao as SelectList, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.IDPosicao, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Nome *</b>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Numero</b>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Numero, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Numero, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Altura</b>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Altura, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Altura, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Peso</b>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Peso, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Peso, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Data de Nascimento *</b>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.DataNascimento, "{0:yyyy-MM-dd}", new { @class = "form-control", type = "date" })
+                @Html.ValidationMessageFor(model => model.DataNascimento, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="navbar-form">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" />
+            </div>
+        </div>
+    </div>
+}
+
+<div id="teste">
+    @Html.ActionLink("Voltar para a Lista", "ListaJogadores")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

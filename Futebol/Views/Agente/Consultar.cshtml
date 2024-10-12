@@ -1,0 +1,112 @@
+﻿@model Futebol.Agente
+
+@{
+    ViewBag.Title = "Consultar Agente";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <style>
+
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+            a:hover {
+                color: black;
+                text-decoration: none;
+            }
+
+
+        #teste {
+            color: black;
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        }
+
+            #teste a:hover {
+                color: #f4511e;
+                text-decoration: none;
+            }
+
+        hr {
+            display: block;
+            height: 1px;
+            border: 0;
+            border-top: 1px solid #000000;
+            margin: 1em 0;
+            padding: 0;
+        }
+
+        label {
+            color: black;
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+            text-align: left
+        }
+
+        input[type=submit] {
+            background-color: #000000;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+            input[type=submit]:hover {
+                background-color: #f4511e;
+            }
+    </style>
+
+<h2 id="teste">Consultar Agente</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal" id="teste">
+        <dt style="text-align:left">
+           ID do Agente
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDAgente)
+        </dd>
+
+        <dt style="text-align:left">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt style="text-align:left">
+            @Html.DisplayNameFor(model => model.Morada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Morada)
+        </dd>
+
+        <dt style="text-align:left">
+            Código Postal
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodigoPostal)
+        </dd>
+
+        <dt style="text-align:left">
+            @Html.DisplayNameFor(model => model.Telefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+
+    </dl>
+</div>
+<p id="teste">
+    @Html.ActionLink("Voltar para a Lista", "ListaAgente")
+</p>

@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="futebolModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Agente">
+          <Key>
+            <PropertyRef Name="IDAgente" />
+          </Key>
+          <Property Name="IDAgente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nome" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Morada" Type="varchar" MaxLength="100" />
+          <Property Name="CodigoPostal" Type="varchar" MaxLength="8" />
+          <Property Name="Telefone" Type="int" />
+        </EntityType>
+        <EntityType Name="Clube">
+          <Key>
+            <PropertyRef Name="IDClube" />
+          </Key>
+          <Property Name="IDClube" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDEstadio" Type="int" Nullable="false" />
+          <Property Name="Nome" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Presidente" Type="varchar" MaxLength="50" />
+          <Property Name="Morada" Type="varchar" MaxLength="100" />
+          <Property Name="CodigoPostal" Type="varchar" MaxLength="8" />
+          <Property Name="Telefone" Type="int" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Estadio">
+          <Key>
+            <PropertyRef Name="IDEstadio" />
+          </Key>
+          <Property Name="IDEstadio" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nome" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Localizacao" Type="varchar" MaxLength="50" />
+          <Property Name="Capacidade" Type="varchar" MaxLength="7" />
+          <Property Name="Arquiteto" Type="varchar" MaxLength="50" />
+          <Property Name="Inauguracao" Type="date" />
+          <Property Name="CustoConstrucao" Type="varchar" MaxLength="12" />
+        </EntityType>
+        <EntityType Name="Jogadores">
+          <Key>
+            <PropertyRef Name="IDJogador" />
+          </Key>
+          <Property Name="IDJogador" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDClube" Type="int" Nullable="false" />
+          <Property Name="IDAgente" Type="int" Nullable="false" />
+          <Property Name="IDPosicao" Type="int" Nullable="false" />
+          <Property Name="Nome" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Numero" Type="int" />
+          <Property Name="Altura" Type="varchar" MaxLength="5" />
+          <Property Name="Peso" Type="varchar" MaxLength="5" />
+          <Property Name="DataNascimento" Type="date" Nullable="false" />
+          <Property Name="Idade" Type="int" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="Posicao">
+          <Key>
+            <PropertyRef Name="IDPosicao" />
+          </Key>
+          <Property Name="IDPosicao" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Posicao" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Treinador">
+          <Key>
+            <PropertyRef Name="IDTreinador" />
+          </Key>
+          <Property Name="IDTreinador" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDAgente" Type="int" Nullable="false" />
+          <Property Name="IDClube" Type="int" Nullable="false" />
+          <Property Name="Nome" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Idade" Type="int" Nullable="false" />
+          <Property Name="Nacionalidade" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_IDAgente">
+          <End Role="Agente" Type="Self.Agente" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Treinador" Type="Self.Treinador" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Agente">
+              <PropertyRef Name="IDAgente" />
+            </Principal>
+            <Dependent Role="Treinador">
+              <PropertyRef Name="IDAgente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IDAgentes">
+          <End Role="Agente" Type="Self.Agente" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Jogadores" Type="Self.Jogadores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Agente">
+              <PropertyRef Name="IDAgente" />
+            </Principal>
+            <Dependent Role="Jogadores">
+              <PropertyRef Name="IDAgente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IDClube">
+          <End Role="Clube" Type="Self.Clube" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Treinador" Type="Self.Treinador" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clube">
+              <PropertyRef Name="IDClube" />
+            </Principal>
+            <Dependent Role="Treinador">
+              <PropertyRef Name="IDClube" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IDClubes">
+          <End Role="Clube" Type="Self.Clube" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Jogadores" Type="Self.Jogadores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clube">
+              <PropertyRef Name="IDClube" />
+            </Principal>
+            <Dependent Role="Jogadores">
+              <PropertyRef Name="IDClube" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IDEstadio">
+          <End Role="Estadio" Type="Self.Estadio" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Clube" Type="Self.Clube" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estadio">
+              <PropertyRef Name="IDEstadio" />
+            </Principal>
+            <Dependent Role="Clube">
+              <PropertyRef Name="IDEstadio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IDPosicao">
+          <End Role="Posicao" Type="Self.Posicao" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Jogadores" Type="Self.Jogadores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Posicao">
+              <PropertyRef Name="IDPosicao" />
+            </Principal>
+            <Dependent Role="Jogadores">
+              <PropertyRef Name="IDPosicao" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="futebolModelStoreContainer">
+          <EntitySet Name="Agente" EntityType="Self.Agente" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Clube" EntityType="Self.Clube" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Estadio" EntityType="Self.Estadio" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Jogadores" EntityType="Self.Jogadores" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Posicao" EntityType="Self.Posicao" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Treinador" EntityType="Self.Treinador" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_IDAgente" Association="Self.FK_IDAgente">
+            <End Role="Agente" EntitySet="Agente" />
+            <End Role="Treinador" EntitySet="Treinador" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IDAgentes" Association="Self.FK_IDAgentes">
+            <End Role="Agente" EntitySet="Agente" />
+            <End Role="Jogadores" EntitySet="Jogadores" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IDClube" Association="Self.FK_IDClube">
+            <End Role="Clube" EntitySet="Clube" />
+            <End Role="Treinador" EntitySet="Treinador" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IDClubes" Association="Self.FK_IDClubes">
+            <End Role="Clube" EntitySet="Clube" />
+            <End Role="Jogadores" EntitySet="Jogadores" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IDEstadio" Association="Self.FK_IDEstadio">
+            <End Role="Estadio" EntitySet="Estadio" />
+            <End Role="Clube" EntitySet="Clube" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IDPosicao" Association="Self.FK_IDPosicao">
+            <End Role="Posicao" EntitySet="Posicao" />
+            <End Role="Jogadores" EntitySet="Jogadores" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="futebolModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Agente">
+          <Key>
+            <PropertyRef Name="IDAgente" />
+          </Key>
+          <Property Name="IDAgente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Morada" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CodigoPostal" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="Telefone" Type="Int32" />
+          <NavigationProperty Name="Treinador" Relationship="Self.FK_IDAgente" FromRole="Agente" ToRole="Treinador" />
+          <NavigationProperty Name="Jogadores" Relationship="Self.FK_IDAgentes" FromRole="Agente" ToRole="Jogadores" />
+        </EntityType>
+        <EntityType Name="Clube">
+          <Key>
+            <PropertyRef Name="IDClube" />
+          </Key>
+          <Property Name="IDClube" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDEstadio" Type="Int32" Nullable="false" />
+          <Property Name="Nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Presidente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Morada" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CodigoPostal" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="Telefone" Type="Int32" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Treinador" Relationship="Self.FK_IDClube" FromRole="Clube" ToRole="Treinador" />
+          <NavigationProperty Name="Jogadores" Relationship="Self.FK_IDClubes" FromRole="Clube" ToRole="Jogadores" />
+          <NavigationProperty Name="Estadio" Relationship="Self.FK_IDEstadio" FromRole="Clube" ToRole="Estadio" />
+        </EntityType>
+        <EntityType Name="Estadio">
+          <Key>
+            <PropertyRef Name="IDEstadio" />
+          </Key>
+          <Property Name="IDEstadio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Localizacao" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Capacidade" Type="String" MaxLength="7" FixedLength="false" Unicode="false" />
+          <Property Name="Arquiteto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Inauguracao" Type="DateTime" Precision="0" />
+          <Property Name="CustoConstrucao" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Clube" Relationship="Self.FK_IDEstadio" FromRole="Estadio" ToRole="Clube" />
+        </EntityType>
+        <EntityType Name="Jogadores">
+          <Key>
+            <PropertyRef Name="IDJogador" />
+          </Key>
+          <Property Name="IDJogador" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDClube" Type="Int32" Nullable="false" />
+          <Property Name="IDAgente" Type="Int32" Nullable="false" />
+          <Property Name="IDPosicao" Type="Int32" Nullable="false" />
+          <Property Name="Nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Numero" Type="Int32" />
+          <Property Name="Altura" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="Peso" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="DataNascimento" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Idade" Type="Int32" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Agente" Relationship="Self.FK_IDAgentes" FromRole="Jogadores" ToRole="Agente" />
+          <NavigationProperty Name="Clube" Relationship="Self.FK_IDClubes" FromRole="Jogadores" ToRole="Clube" />
+          <NavigationProperty Name="Posicao" Relationship="Self.FK_IDPosicao" FromRole="Jogadores" ToRole="Posicao" />
+        </EntityType>
+        <EntityType Name="Posicao">
+          <Key>
+            <PropertyRef Name="IDPosicao" />
+          </Key>
+          <Property Name="IDPosicao" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Posicao1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Jogadores" Relationship="Self.FK_IDPosicao" FromRole="Posicao" ToRole="Jogadores" />
+        </EntityType>
+        <EntityType Name="Treinador">
+          <Key>
+            <PropertyRef Name="IDTreinador" />
+          </Key>
+          <Property Name="IDTreinador" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDAgente" Type="Int32" Nullable="false" />
+          <Property Name="IDClube" Type="Int32" Nullable="false" />
+          <Property Name="Nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Idade" Type="Int32" Nullable="false" />
+          <Property Name="Nacionalidade" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Agente" Relationship="Self.FK_IDAgente" FromRole="Treinador" ToRole="Agente" />
+          <NavigationProperty Name="Clube" Relationship="Self.FK_IDClube" FromRole="Treinador" ToRole="Clube" />
+        </EntityType>
+        <Association Name="FK_IDAgente">
+          <End Role="Agente" Type="Self.Agente" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Treinador" Type="Self.Treinador" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Agente">
+              <PropertyRef Name="IDAgente" />
+            </Principal>
+            <Dependent Role="Treinador">
+              <PropertyRef Name="IDAgente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IDAgentes">
+          <End Role="Agente" Type="Self.Agente" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Jogadores" Type="Self.Jogadores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Agente">
+              <PropertyRef Name="IDAgente" />
+            </Principal>
+            <Dependent Role="Jogadores">
+              <PropertyRef Name="IDAgente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IDClube">
+          <End Role="Clube" Type="Self.Clube" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Treinador" Type="Self.Treinador" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clube">
+              <PropertyRef Name="IDClube" />
+            </Principal>
+            <Dependent Role="Treinador">
+              <PropertyRef Name="IDClube" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IDClubes">
+          <End Role="Clube" Type="Self.Clube" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Jogadores" Type="Self.Jogadores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clube">
+              <PropertyRef Name="IDClube" />
+            </Principal>
+            <Dependent Role="Jogadores">
+              <PropertyRef Name="IDClube" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IDEstadio">
+          <End Role="Estadio" Type="Self.Estadio" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Clube" Type="Self.Clube" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Estadio">
+              <PropertyRef Name="IDEstadio" />
+            </Principal>
+            <Dependent Role="Clube">
+              <PropertyRef Name="IDEstadio" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IDPosicao">
+          <End Role="Posicao" Type="Self.Posicao" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Jogadores" Type="Self.Jogadores" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Posicao">
+              <PropertyRef Name="IDPosicao" />
+            </Principal>
+            <Dependent Role="Jogadores">
+              <PropertyRef Name="IDPosicao" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="futebolEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Agente" EntityType="Self.Agente" />
+          <EntitySet Name="Clube" EntityType="Self.Clube" />
+          <EntitySet Name="Estadio" EntityType="Self.Estadio" />
+          <EntitySet Name="Jogadores" EntityType="Self.Jogadores" />
+          <EntitySet Name="Posicao" EntityType="Self.Posicao" />
+          <EntitySet Name="Treinador" EntityType="Self.Treinador" />
+          <AssociationSet Name="FK_IDAgente" Association="Self.FK_IDAgente">
+            <End Role="Agente" EntitySet="Agente" />
+            <End Role="Treinador" EntitySet="Treinador" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IDAgentes" Association="Self.FK_IDAgentes">
+            <End Role="Agente" EntitySet="Agente" />
+            <End Role="Jogadores" EntitySet="Jogadores" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IDClube" Association="Self.FK_IDClube">
+            <End Role="Clube" EntitySet="Clube" />
+            <End Role="Treinador" EntitySet="Treinador" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IDClubes" Association="Self.FK_IDClubes">
+            <End Role="Clube" EntitySet="Clube" />
+            <End Role="Jogadores" EntitySet="Jogadores" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IDEstadio" Association="Self.FK_IDEstadio">
+            <End Role="Estadio" EntitySet="Estadio" />
+            <End Role="Clube" EntitySet="Clube" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IDPosicao" Association="Self.FK_IDPosicao">
+            <End Role="Posicao" EntitySet="Posicao" />
+            <End Role="Jogadores" EntitySet="Jogadores" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="futebolModelStoreContainer" CdmEntityContainer="futebolEntities">
+          <EntitySetMapping Name="Agente">
+            <EntityTypeMapping TypeName="futebolModel.Agente">
+              <MappingFragment StoreEntitySet="Agente">
+                <ScalarProperty Name="IDAgente" ColumnName="IDAgente" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Morada" ColumnName="Morada" />
+                <ScalarProperty Name="CodigoPostal" ColumnName="CodigoPostal" />
+                <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Clube">
+            <EntityTypeMapping TypeName="futebolModel.Clube">
+              <MappingFragment StoreEntitySet="Clube">
+                <ScalarProperty Name="IDClube" ColumnName="IDClube" />
+                <ScalarProperty Name="IDEstadio" ColumnName="IDEstadio" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Presidente" ColumnName="Presidente" />
+                <ScalarProperty Name="Morada" ColumnName="Morada" />
+                <ScalarProperty Name="CodigoPostal" ColumnName="CodigoPostal" />
+                <ScalarProperty Name="Telefone" ColumnName="Telefone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Estadio">
+            <EntityTypeMapping TypeName="futebolModel.Estadio">
+              <MappingFragment StoreEntitySet="Estadio">
+                <ScalarProperty Name="IDEstadio" ColumnName="IDEstadio" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Localizacao" ColumnName="Localizacao" />
+                <ScalarProperty Name="Capacidade" ColumnName="Capacidade" />
+                <ScalarProperty Name="Arquiteto" ColumnName="Arquiteto" />
+                <ScalarProperty Name="Inauguracao" ColumnName="Inauguracao" />
+                <ScalarProperty Name="CustoConstrucao" ColumnName="CustoConstrucao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Jogadores">
+            <EntityTypeMapping TypeName="futebolModel.Jogadores">
+              <MappingFragment StoreEntitySet="Jogadores">
+                <ScalarProperty Name="IDJogador" ColumnName="IDJogador" />
+                <ScalarProperty Name="IDClube" ColumnName="IDClube" />
+                <ScalarProperty Name="IDAgente" ColumnName="IDAgente" />
+                <ScalarProperty Name="IDPosicao" ColumnName="IDPosicao" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Numero" ColumnName="Numero" />
+                <ScalarProperty Name="Altura" ColumnName="Altura" />
+                <ScalarProperty Name="Peso" ColumnName="Peso" />
+                <ScalarProperty Name="DataNascimento" ColumnName="DataNascimento" />
+                <ScalarProperty Name="Idade" ColumnName="Idade" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Posicao">
+            <EntityTypeMapping TypeName="futebolModel.Posicao">
+              <MappingFragment StoreEntitySet="Posicao">
+                <ScalarProperty Name="IDPosicao" ColumnName="IDPosicao" />
+                <ScalarProperty Name="Posicao1" ColumnName="Posicao" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Treinador">
+            <EntityTypeMapping TypeName="futebolModel.Treinador">
+              <MappingFragment StoreEntitySet="Treinador">
+                <ScalarProperty Name="IDTreinador" ColumnName="IDTreinador" />
+                <ScalarProperty Name="IDAgente" ColumnName="IDAgente" />
+                <ScalarProperty Name="IDClube" ColumnName="IDClube" />
+                <ScalarProperty Name="Nome" ColumnName="Nome" />
+                <ScalarProperty Name="Idade" ColumnName="Idade" />
+                <ScalarProperty Name="Nacionalidade" ColumnName="Nacionalidade" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,254 @@
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\Futebol.dll.config
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\Futebol.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\Futebol.pdb
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\csc.exe
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\csc.exe.config
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\csc.rsp
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\csi.exe
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\csi.exe.config
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\csi.rsp
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.AppContext.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.Console.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.IO.Compression.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.IO.Pipes.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.Security.Claims.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.ValueTuple.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.Xml.XPath.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\vbc.exe
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\vbc.exe.config
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\vbc.rsp
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\VBCSCompiler.exe
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\Antlr3.Runtime.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\Newtonsoft.Json.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\System.Web.Helpers.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\System.Web.Mvc.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\System.Web.Optimization.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\System.Web.Razor.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\System.Web.WebPages.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\System.Web.WebPages.Razor.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\WebGrease.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\System.Web.Helpers.xml
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\System.Web.Mvc.xml
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\System.Web.Optimization.xml
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\System.Web.Razor.xml
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\System.Web.WebPages.xml
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\System.Web.WebPages.Razor.xml
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\Newtonsoft.Json.xml
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\Antlr3.Runtime.pdb
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tiago\Desktop\Futebol\Futebol\obj\Debug\Futebol.csproj.CoreCompileInputs.cache
+C:\Users\tiago\Desktop\Futebol\Futebol\obj\Debug\Futebol.csproj.CopyComplete
+C:\Users\tiago\Desktop\Futebol\Futebol\obj\Debug\Futebol.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\obj\Debug\Futebol.pdb
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\EntityFramework.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\EntityFramework.SqlServer.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\EntityFramework.xml
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\EntityFramework.SqlServer.xml
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\PagedList.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\PagedList.Mvc.dll
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\PagedList.xml
+C:\Users\tiago\Desktop\Futebol\Futebol\bin\PagedList.Mvc.xml
+F:\Projetos Finalizados\Futebol\Futebol\bin\Futebol.dll.config
+F:\Projetos Finalizados\Futebol\Futebol\bin\Futebol.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\Futebol.pdb
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\csc.exe
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\csc.exe.config
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\csc.rsp
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\csi.exe
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\csi.exe.config
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\csi.rsp
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.Managed.Core.targets
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.AppContext.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Collections.Immutable.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Console.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.IO.Compression.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.IO.FileSystem.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.IO.Pipes.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Reflection.Metadata.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Security.AccessControl.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Security.Claims.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Security.Principal.Windows.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.ValueTuple.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Xml.XmlDocument.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Xml.XPath.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\vbc.exe
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\vbc.exe.config
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\vbc.rsp
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\VBCSCompiler.exe
+F:\Projetos Finalizados\Futebol\Futebol\bin\roslyn\VBCSCompiler.exe.config
+F:\Projetos Finalizados\Futebol\Futebol\bin\Antlr3.Runtime.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\EntityFramework.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\EntityFramework.SqlServer.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\Microsoft.Web.Infrastructure.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\Newtonsoft.Json.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\PagedList.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\PagedList.Mvc.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\System.Web.Helpers.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\System.Web.Mvc.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\System.Web.Optimization.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\System.Web.Razor.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\System.Web.WebPages.Deployment.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\System.Web.WebPages.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\System.Web.WebPages.Razor.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\WebGrease.dll
+F:\Projetos Finalizados\Futebol\Futebol\bin\EntityFramework.xml
+F:\Projetos Finalizados\Futebol\Futebol\bin\EntityFramework.SqlServer.xml
+F:\Projetos Finalizados\Futebol\Futebol\bin\PagedList.xml
+F:\Projetos Finalizados\Futebol\Futebol\bin\PagedList.Mvc.xml
+F:\Projetos Finalizados\Futebol\Futebol\bin\System.Web.Helpers.xml
+F:\Projetos Finalizados\Futebol\Futebol\bin\System.Web.Mvc.xml
+F:\Projetos Finalizados\Futebol\Futebol\bin\System.Web.Optimization.xml
+F:\Projetos Finalizados\Futebol\Futebol\bin\System.Web.Razor.xml
+F:\Projetos Finalizados\Futebol\Futebol\bin\System.Web.WebPages.xml
+F:\Projetos Finalizados\Futebol\Futebol\bin\System.Web.WebPages.Deployment.xml
+F:\Projetos Finalizados\Futebol\Futebol\bin\System.Web.WebPages.Razor.xml
+F:\Projetos Finalizados\Futebol\Futebol\bin\Newtonsoft.Json.xml
+F:\Projetos Finalizados\Futebol\Futebol\bin\Antlr3.Runtime.pdb
+F:\Projetos Finalizados\Futebol\Futebol\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Projetos Finalizados\Futebol\Futebol\obj\Debug\Futebol.csprojAssemblyReference.cache
+F:\Projetos Finalizados\Futebol\Futebol\obj\Debug\Futebol.csproj.CoreCompileInputs.cache
+F:\Projetos Finalizados\Futebol\Futebol\obj\Debug\Futebol.csproj.CopyComplete
+F:\Projetos Finalizados\Futebol\Futebol\obj\Debug\Futebol.dll
+F:\Projetos Finalizados\Futebol\Futebol\obj\Debug\Futebol.pdb
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\Futebol.dll.config
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\Futebol.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\Futebol.pdb
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\csc.exe
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\csc.exe.config
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\csc.rsp
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\csi.exe
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\csi.exe.config
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\csi.rsp
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.Managed.Core.targets
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.AppContext.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Collections.Immutable.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Console.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.IO.Compression.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.IO.FileSystem.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.IO.Pipes.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Reflection.Metadata.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Security.AccessControl.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Security.Claims.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Security.Principal.Windows.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.ValueTuple.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Xml.XmlDocument.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Xml.XPath.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\vbc.exe
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\vbc.exe.config
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\vbc.rsp
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\VBCSCompiler.exe
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\roslyn\VBCSCompiler.exe.config
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\Antlr3.Runtime.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\EntityFramework.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\EntityFramework.SqlServer.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\Microsoft.Web.Infrastructure.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\Newtonsoft.Json.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\PagedList.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\PagedList.Mvc.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\System.Web.Helpers.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\System.Web.Mvc.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\System.Web.Optimization.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\System.Web.Razor.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\System.Web.WebPages.Deployment.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\System.Web.WebPages.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\System.Web.WebPages.Razor.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\WebGrease.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\EntityFramework.xml
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\EntityFramework.SqlServer.xml
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\PagedList.xml
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\PagedList.Mvc.xml
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\System.Web.Helpers.xml
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\System.Web.Mvc.xml
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\System.Web.Optimization.xml
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\System.Web.Razor.xml
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\System.Web.WebPages.xml
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\System.Web.WebPages.Deployment.xml
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\System.Web.WebPages.Razor.xml
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\Newtonsoft.Json.xml
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\Antlr3.Runtime.pdb
+E:\HDD\Projetos Finalizados\Futebol\Futebol\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\HDD\Projetos Finalizados\Futebol\Futebol\obj\Debug\Futebol.csproj.CoreCompileInputs.cache
+E:\HDD\Projetos Finalizados\Futebol\Futebol\obj\Debug\Futebol.csproj.CopyComplete
+E:\HDD\Projetos Finalizados\Futebol\Futebol\obj\Debug\Futebol.dll
+E:\HDD\Projetos Finalizados\Futebol\Futebol\obj\Debug\Futebol.pdb
+E:\HDD\Projetos Finalizados\Futebol\Futebol\obj\Debug\Futebol.csproj.AssemblyReference.cache
+C:\Users\tiago\Desktop\Futebol\Futebol\obj\Debug\Futebol.csproj.AssemblyReference.cache
+C:\Users\James\Desktop\Futebol\Futebol\obj\Debug\Futebol.csproj.AssemblyReference.cache
+C:\Users\James\Desktop\Futebol\Futebol\obj\Debug\Futebol.csproj.CoreCompileInputs.cache

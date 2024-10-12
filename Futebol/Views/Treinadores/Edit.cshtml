@@ -1,0 +1,146 @@
+﻿@model Futebol.Treinador
+
+@{
+    ViewBag.Title = "Editar Treinador";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 id="teste">Editar Treinador</h2>
+
+<style>
+
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+
+    #teste {
+        color: black;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+
+        #teste a:hover {
+            color: #f4511e;
+            text-decoration: none;
+        }
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #000000;
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    label {
+        color: black;
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+        text-align: left
+    }
+
+    input[type=submit] {
+        background-color: #000000;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+        input[type=submit]:hover {
+            background-color: #f4511e;
+             color:white;
+        }
+</style>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-control-static" id="teste">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="navbar-form" style="display: none;">
+            @Html.LabelFor(model => model.IDTreinador, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.IDTreinador, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.IDTreinador, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Agente *</b>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.IDAgente, ViewBag.agente as SelectList, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.IDAgente, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Clube *</b>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.IDClube, ViewBag.clube as SelectList, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.IDClube, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Nome *</b>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Idade *</b>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Idade, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Idade, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <b class="control-label col-md-2">Nacionalidade *</b>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Nacionalidade, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Nacionalidade, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="navbar-form">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div id="teste">
+    @Html.ActionLink("Voltar para a Lista", "ListaTreinadores")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

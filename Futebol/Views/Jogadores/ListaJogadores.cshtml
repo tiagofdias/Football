@@ -1,0 +1,410 @@
+﻿@using Futebol.Models;
+@using PagedList.Mvc;
+@model PagedList.IPagedList<Futebol.Jogadores>
+
+<link href="~/Content/PagedList.css" rel="stylesheet" />
+
+@{
+    ViewBag.Title = "ListaJogadores";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #FFFFFF;
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+    #teste {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+
+        #teste a:hover {
+            color: #f4511e;
+            text-decoration: none;
+        }
+
+    #customers {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+        #customers td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #f4511e;
+            color: white;
+        }
+
+    /*Ordenação*/
+
+    #cabecalhotabela {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+
+        #cabecalhotabela a {
+            color: white;
+            text-decoration: none;
+        }
+
+            #cabecalhotabela a:hover {
+                color: black;
+                text-decoration: none;
+            }
+
+    /*Pesquisa*/
+
+    input[type=submit] {
+        background-color: #000000;
+        color: white;
+        padding: 7px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: left;
+    }
+
+        input[type=submit]:hover {
+            background-color: #f4511e;
+            color: white;
+        }
+
+    #search1 {
+        width: 1523px;
+        height: 380px;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    #search2 {
+        width: 1523px;
+        height: 330px;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    #search3 {
+        width: 1523px;
+        height: 360px;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    #alerta {
+        width: 1511px;
+        height: 60px;
+        position: fixed;
+        bottom: 0px;
+        right: 170px;
+    }
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .alert {
+        padding: 20px;
+        background-color: #f44336;
+        color: white;
+        opacity: 1;
+        transition: opacity 0.6s;
+        margin-bottom: 200px;
+    }
+
+        .alert.success {
+            background-color: #4CAF50;
+        }
+
+        .alert.info {
+            background-color: #2196F3;
+        }
+
+        .alert.warning {
+            background-color: #ff9800;
+        }
+
+
+    body {
+        font-family: "Lato", sans-serif;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+    #main {
+        transition: margin-left .5s;
+        padding: 16px;
+    }
+</style>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
+
+<h2 id="teste">Jogadores</h2>
+
+<p id="teste">
+    @Html.ActionLink("Adicionar Jogador", "AdicionarJogadores")
+</p>
+
+<div id="main">
+    <h2>Sidenav Push Example</h2>
+    <p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+
+<table id="customers">
+    <tr id="cabecalhotabela">
+        <th>
+            @Html.ActionLink("ID do Jogador", "ListaJogadores", new { ordenar = ViewBag.ordenarID, filtro = ViewBag.filtro })
+        </th>
+        <th>
+            @Html.ActionLink("Nome", "ListaJogadores", new { ordenar = ViewBag.ordenarNome, filtro = ViewBag.filtro })
+
+        </th>
+        <th>
+            @Html.ActionLink("Clube", "ListaJogadores", new { ordenar = ViewBag.ordenarIDClube, filtro = ViewBag.filtro })
+        </th>
+        <th>
+            @Html.ActionLink("Agente Desportivo", "ListaJogadores", new { ordenar = ViewBag.ordenarIDAgente, filtro = ViewBag.filtro })
+        </th>
+        <th>
+            @Html.ActionLink("Posição", "ListaJogadores", new { ordenar = ViewBag.ordenarPosicao, filtro = ViewBag.filtro })
+        </th>
+        <th>
+            Número
+        </th>
+        <th>
+            Altura
+        </th>
+        <th>
+            Peso
+        </th>
+        <th>
+            Data de Nascimento
+        </th>
+        <th>
+            @Html.ActionLink("Idade", "ListaJogadores", new { ordenar = ViewBag.ordenarIdade, filtro = ViewBag.filtro })
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IDJogador)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+
+            </td>
+            <td>
+                @*IDCLUBE*@
+                @Utilitarios.mapaClubeJ(item.IDClube, ViewBag.Clube as List<Clube>)
+            </td>
+            <td>
+                @*IDAGENTE*@
+                @Utilitarios.mapaAgenteJ(item.IDAgente, ViewBag.Agente as List<Agente>)
+            </td>
+            <td>
+                @*IDPOSICAO*@
+                @Utilitarios.mapaPosicaoJ(item.IDPosicao, ViewBag.Posicao as List<Posicao>)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Numero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Altura)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Peso)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataNascimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Idade)
+            </td>
+            <td id="teste">
+                @Html.ActionLink("Editar", "Edit", new { id = item.IDJogador }) |
+                @Html.ActionLink("Consultar", "Consultar", new { id = item.IDJogador }) |
+                @Html.ActionLink("Eliminar", "Delete", null, new { id = item.IDJogador, name = "btnApagarJogadores" })
+            </td>
+        </tr>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+             @Html.ActionLink("Adicionar", "AdicionarJogadores")
+             @Html.ActionLink("Editar", "Edit", new { id = item.IDJogador })
+             @Html.ActionLink("Consultar", "Consultar", new { id = item.IDJogador })
+             @Html.ActionLink("Eliminar", "Delete", null, new { id = item.IDJogador, name = "btnApagarJogadores" })
+        </div>
+    }
+
+</table>
+
+@Html.PagedListPager(Model, page => Url.Action("ListaJogadores", new { page, ordenar = ViewBag.ordenar, filtro = ViewBag.filtro }))
+
+<br />
+<br>
+<br>
+<br>
+<br>
+<br>
+@using (Html.BeginForm("ListaJogadores", "Jogadores", FormMethod.Get))
+{
+
+    <br />
+    <div class="navbar-form" id="search1">
+
+        <font face="Trebuchet MS"><b>Pesquisa</b></font>
+
+        <div class="navbar-form" id="search3">
+            @Html.TextBox("search", "", new { @class = "form-control" })
+        </div>
+
+        <div class="col-md-offset-2 col-md-10" id="search2">
+
+            <input type="submit" value="Procurar" class="btn btn-default" />
+        </div>
+    </div>
+
+}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+@if (ViewBag.msg == "Registo criado com sucesso" || ViewBag.msg == "Registo eliminado com sucesso" || ViewBag.msg == "Registo editado com sucesso")
+{
+    <div class="alert success" id="alerta">
+        <strong id="teste">Sucesso!</strong> @ViewBag.msg
+    </div>
+}
+else if (ViewBag.msg == "Treinador Inexistente" || ViewBag.msg == "Ocorreu um Erro. Operação cancelada" || ViewBag.msg == "O registo não foi encontrado")
+{
+
+    <div class="alert" id="alerta">
+        <strong id="teste">Erro!</strong> @ViewBag.msg
+    </div>
+
+}
+
+@section ApagarJogadores{
+
+    <script type="text/javascript">
+
+        $(function () {
+
+            $("[name='btnApagarJogadores']").click(function (evt) {
+
+                evt = evt ? evt : window.event;
+                evt.preventDefault();
+
+                if (confirm("Tem a certeza que pretende apagar este registo?") == false) {
+
+                    return false;
+                }
+
+                //ajax
+                $.ajax({
+
+                    url:'@Url.Action("Delete")',
+                    data: { id: evt.target.id },
+                    type: "POST",
+                    success: function (data) {
+
+                        console.log(JSON.stringify(data));
+                        $("#visor").text(data.msg);
+
+                        //Remover a linha
+                        $(evt.target).closest("tr").remove();
+
+                    },
+                    error: function () {
+
+                        alert("Erro");
+                    }
+
+                });
+            });
+
+        });
+
+    </script>
+}

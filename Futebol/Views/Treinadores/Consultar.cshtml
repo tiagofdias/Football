@@ -1,0 +1,121 @@
+﻿@using Futebol.Models
+@model Futebol.Treinador
+
+@{
+    ViewBag.Title = "Consultar Treinador";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+
+    #teste {
+        color: black;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+
+        #teste a:hover {
+            color: #f4511e;
+            text-decoration: none;
+        }
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #000000;
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    label {
+        color: black;
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+        text-align: left
+    }
+
+    input[type=submit] {
+        background-color: #000000;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+        input[type=submit]:hover {
+            background-color: #f4511e;
+        }
+</style>
+
+<h2 id="teste">Consultar Treinador</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal" id="teste">
+        <dt style="text-align:left">
+            ID do Treinador
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDTreinador)
+        </dd>
+
+        <dt style="text-align:left">
+            Agente
+        </dt>
+
+        <dd>
+            @Utilitarios.mapaAgenteT(Model.IDAgente, ViewBag.agente as List<Agente>)
+        </dd>
+
+        <dt style="text-align:left">
+            Clube
+        </dt>
+
+        <dd>
+            @Utilitarios.mapaClubeT(Model.IDClube, ViewBag.clube as List<Clube>)
+        </dd>
+
+        <dt style="text-align:left">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt style="text-align:left">
+            @Html.DisplayNameFor(model => model.Idade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Idade)
+        </dd>
+
+        <dt style="text-align:left">
+            @Html.DisplayNameFor(model => model.Nacionalidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nacionalidade)
+        </dd>
+
+    </dl>
+</div>
+<p id="teste">
+    @Html.ActionLink("Voltar para a Lista", "ListaTreinadores")
+</p>
